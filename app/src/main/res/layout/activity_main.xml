@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.hyugnmin.android.copychatlayout.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/d1"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="93dp"
+        android:id="@+id/tabLayoutD1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"
+        android:layout_below="@+id/tabLayoutD1"
+        />
+
+    <ImageView
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:layout_alignTop="@+id/tabLayoutD1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="18dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/iconHuman" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:id="@+id/iconTalkBalloon"
+        android:layout_marginLeft="87dp"
+        android:layout_marginStart="87dp"
+        android:layout_alignTop="@+id/iconHuman"
+        android:layout_toRightOf="@+id/iconHuman"
+        android:layout_toEndOf="@+id/iconHuman" />
+
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:id="@+id/iconContents"
+        android:layout_marginLeft="89dp"
+        android:layout_marginStart="89dp"
+        android:layout_alignTop="@+id/iconTalkBalloon"
+        android:layout_toRightOf="@+id/iconTalkBalloon"
+        android:layout_toEndOf="@+id/iconTalkBalloon" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        android:id="@+id/iconMyProfile"
+        android:layout_alignTop="@+id/iconContents"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginEnd="45dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@android:drawable/ic_notification_overlay"
+        android:id="@+id/newAlertIcon"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:layout_alignTop="@+id/tabLayoutD1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/iconHuman"
+        android:layout_toStartOf="@+id/iconTalkBalloon"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/titleBarFrinedNumber" />
+
+</RelativeLayout>
